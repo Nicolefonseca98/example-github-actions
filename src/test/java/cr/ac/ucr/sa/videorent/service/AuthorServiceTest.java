@@ -43,7 +43,7 @@ public class AuthorServiceTest {
 
 		author.addBook(book);
 		authorService.insert(author);
-		assertTrue(author.getId() != 0);
+		assertTrue(author.getId() == 0);
 	}
 
 	@Test
